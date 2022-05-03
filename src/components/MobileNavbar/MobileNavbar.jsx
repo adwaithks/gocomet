@@ -1,11 +1,11 @@
 import React from 'react'
 import {GiHamburgerMenu} from 'react-icons/gi'
-import {MdFavoriteBorder, MdSearch, MdOutlineShoppingBag, MdOutlinePersonOutline} from 'react-icons/md'
+import {MdSearch} from 'react-icons/md'
 import { CartContext } from '../../contexts/cartContext';
 import { ProductContext } from '../../contexts/productContext';
 import { WishListContext } from '../../contexts/wishListContext';
 import CartModal from '../CartModal/CartModal';
-import Filters from '../Filters/Filters';
+import MobFilters from '../Filters/MobFilters';
 import WishlistModal from '../WishlistModal/WishlistModal'
 import './MobileNavbar.css'
 
@@ -58,25 +58,27 @@ function MobileNavbar() {
     <WishlistModal wishlistItems={wishlistItems} isOpen={wishlistModalIsOpen} setIsOpen={setWishlistModalIsOpen} />
         {
             expanded ? (
-<div className='mobile-navbar-links-container'>
-            <div className='mobile-navbar-product-search'>
-                <MdSearch className='mobile-navbar-search-icon' />
-                <input type="text" placeholder='Search for products, brands and more' onChange={searchHandler} />
-            </div>
-            <div className='mobile-navbar-link'>
-                <h4>User</h4>
-            </div>
+              <div className='mobile-navbar-links-container'>
+                  <div className='mobile-navbar-product-search'>
+                      <MdSearch className='mobile-navbar-search-icon' />
+                      <input type="text" placeholder='Search for products, brands and more' onChange={searchHandler} />
+                  </div>
+                  <div className='mobile-navbar-link'>
+                      <h4>User</h4>
+                  </div>
 
-            <div className='mobile-navbar-link' onClick={openWishlistModalHandler}>
-                <h4>Wishlist</h4>
-                <span className='mobile-navbar-bag-item-count'>{wishlistItems?.length || 0}</span>
-            </div>
+                  <div className='mobile-navbar-link' onClick={openWishlistModalHandler}>
+                      <h4>Wishlist</h4>
+                      <span className='mobile-navbar-bag-item-count'>{wishlistItems?.length || 0}</span>
+                  </div>
 
-            <div className='mobile-navbar-link' onClick={openCartModalHandler}>
-                <h4>Bag</h4>
-                <span className='mobile-navbar-bag-item-count'>{cartItems?.length || 0}</span>
-            </div>
-        </div>
+                  <div className='mobile-navbar-link' onClick={openCartModalHandler}>
+                      <h4>Bag</h4>
+                      <span className='mobile-navbar-bag-item-count'>{cartItems?.length || 0}</span>
+                  </div>
+                  <div className='mobile-navbar-filters'><MobFilters /></div>
+                  
+              </div>
             ) : (null)
         }
         

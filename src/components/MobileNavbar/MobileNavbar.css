@@ -4,6 +4,7 @@
     z-index: 10;
     top: 0 !important;
     display: flex;
+    align-items: center;
     padding: 10px;
     height: 70px;
     border: rgba(0, 0, 0, 0.282) solid 1px;
@@ -18,8 +19,10 @@
 
 .mobile-navbar-links-container {
     height: fit-content;
-    background-color: rgb(238, 238, 238);
+    background-color: rgba(238, 238, 238, 0.166);
     display: flex;
+    width: 90%;
+    margin: auto;
     padding: 10px;
     flex-direction: column;
     align-items: center;

@@ -26,5 +26,11 @@
     left: 50% !important;
     top: 0 !important;
     transform: translate(-50%, 0%) !important;
+}
 
+@media only screen and (max-width: 800px) {
+    .image-zoom-modal {
+        width: 98%;
+        outline: none;
+    }
 }

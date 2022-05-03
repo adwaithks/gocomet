@@ -1,7 +1,6 @@
 .product-card {
     width: fit-content;
     height: 400px;
-    border: rgba(0, 0, 0, 0.328) solid 1px;
     position: relative;
 }
 
@@ -168,4 +167,3 @@
     max-width: 200px;
     transition: max-width 0.5s;
 }
-

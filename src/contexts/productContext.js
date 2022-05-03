@@ -26,7 +26,7 @@ export const ProductProvider = ({ children }) => {
             name: "Roadster2",
             desc: "Cotton Checked Casual TShirt",
             price: 1499,
-            discountedPrice: 674,
+            discountedPrice: 674, 
             offer: 34,
             rating: 5.8,
             numRatings: 22.1,
