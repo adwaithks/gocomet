@@ -9,14 +9,14 @@ import './Filters.css'
 function Filters() {
 
   function clearFilters() {
-    setCategoryFilter('');
-    setBrandFilter('');
-    setBrandFilter([]);
+    if (categoryFilter || brandFilter || discountFilter) {
+      window.location.href = "/"
+    } 
     setDisplayedProducts(products);
   }
   
-  const { categoryFilter, setCategoryFilter, brandFilter, setBrandFilter, discountFilter, setDiscountFilter } = React.useContext(FilterContext);
-  const {products, setProducts, displayedProducts, setDisplayedProducts} = React.useContext(ProductContext)
+  const { categoryFilter, brandFilter, discountFilter } = React.useContext(FilterContext);
+  const {products, setDisplayedProducts} = React.useContext(ProductContext)
   
     return (
     <div className='filters'>

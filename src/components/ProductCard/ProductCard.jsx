@@ -1,7 +1,6 @@
 import React from 'react'
 import './ProductCard.css'
 import {AiFillStar} from 'react-icons/ai'
-import {ImStack} from 'react-icons/im'
 import {MdFavoriteBorder} from 'react-icons/md'
 import "react-responsive-carousel/lib/styles/carousel.min.css" // requires a loader
 import { Carousel } from 'react-responsive-carousel'
@@ -35,8 +34,11 @@ function ProductCard({name, desc, price, discountPrice, offer, rating, numRating
         })
 
         if (flag)
+        {
             window.localStorage.setItem('wishlist', JSON.stringify([...wishlistItems, product]))
             setWishlistItems([...wishlistItems, product]);
+        }
+            
     }
 
     function gotoProductHandler() {
@@ -78,7 +80,7 @@ function ProductCard({name, desc, price, discountPrice, offer, rating, numRating
                         }
                     </Carousel>
                     <div className='product-viewsimilar-container'>
-                        <ImStack className='product-viewsimilar-button'></ImStack>
+                        <span>View Similar</span>
                     </div>
                 </>
                 ) : (

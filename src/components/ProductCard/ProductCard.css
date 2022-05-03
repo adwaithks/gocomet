@@ -143,20 +143,29 @@
 }
 
 .product-viewsimilar-container {
-    width: 100%;
     position: absolute;
     z-index: 2;
     right: 5px;
+    border-radius: 4px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     bottom: 90px;
+    background-color: white;
+    overflow: hidden;
+    height: 32px;
+    max-width: 45px;
+    cursor: pointer;
+    transition: max-width 0.5s;
 }
 
-.product-viewsimilar-button {
-    width: fit-content;
-    float: right;
-    cursor: pointer;
-    color: black;
-    background-color: white;
-    border-radius: 50%;
-    padding: 2px;
-    font-size: 1.5em;
+.product-viewsimilar-container > span {
+    white-space: nowrap;
 }
+
+.product-viewsimilar-container:hover {
+    max-width: 200px;
+    transition: max-width 0.5s;
+}
+
