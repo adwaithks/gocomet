@@ -1,0 +1,36 @@
+.filters {
+    width: 25%;
+    height: calc(100vh);
+    padding: 20px;
+    border-top: rgb(181, 181, 181) solid 1px;
+}
+
+.filters-head > h1 {
+    font-size: 1em;
+    margin-right: 30px;
+}
+
+.filters-head > h5 {
+    text-decoration: underline;
+    font-weight: 400;
+    float: right;
+    cursor: pointer;
+}
+
+.filters-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .filters {
+        display: hidden;
+        visibility: hidden;
+        width: 0% !important;
+        margin-top: 0px !important;
+        padding: 0px !important;
+    }
+
+}

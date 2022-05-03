@@ -1,0 +1,16 @@
+.image-zoom-modal {
+    width: 500px;
+    height: 300px;
+}
+
+.image-zoom {
+    cursor: zoom-in !important;
+}
+
+.image-zoom-carousel {
+    position: absolute !important;
+    left: 50% !important;
+    top: 0 !important;
+    transform: translate(-50%, 0%) !important;
+
+}

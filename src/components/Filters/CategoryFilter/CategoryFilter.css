@@ -1,0 +1,16 @@
+.filters-category{ 
+    width: fit-content;
+}
+
+.filters-category-list {
+    padding: 5px;
+    list-style: none;
+}
+
+.filters-category-ind {
+    padding: 3px;
+}
+
+.filters-category-ind > label {
+    margin-left: 5px;
+}

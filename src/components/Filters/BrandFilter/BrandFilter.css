@@ -1,0 +1,22 @@
+.filters-brand{ 
+    width: fit-content;
+}
+
+.filters-brand > h1 {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.filters-brand-list {
+    padding: 5px;
+    list-style: none;
+
+}
+
+.filters-brand-ind {
+    padding: 3px;
+}
+
+.filters-brand-ind > label {
+    margin-left: 5px;
+}

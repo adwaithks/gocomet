@@ -1,0 +1,85 @@
+.mobile-navbar {
+    position: sticky;
+    background-color: white;
+    z-index: 10;
+    top: 0 !important;
+    display: flex;
+    padding: 10px;
+    height: 70px;
+    border: rgba(0, 0, 0, 0.282) solid 1px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.436);
+    justify-content: space-between;
+}
+
+.burger-icon {
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.mobile-navbar-links-container {
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-navbar-fav-icon, .mobile-navbar-bag-icon, .mobile-navbar-user-icon  {
+    font-size: 2em;
+}
+
+
+.mobile-navbar-bag-item-count {
+    height: 20px;
+    margin-left: 5px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    border-radius: 50%;
+    background: red;
+    color: white;
+}
+
+.mobile-navbar-link {    
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    text-decoration: none;
+}
+
+.mobile-navbar-link:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+.mobile-navbar-link > h4 {
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+
+.mobile-navbar-product-search {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-navbar-product-search > input{
+    font-size: 1em;
+    padding: 8px;
+    width: 100%;
+}
+
+.mobile-navbar-search-icon {
+    font-size: 2em;
+    color: black;
+}

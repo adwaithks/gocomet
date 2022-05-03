@@ -1,0 +1,17 @@
+.products-page {
+    display: grid;
+    grid-template-areas: "sort-by" "."
+                         "productfilters" "productslist";
+}
+
+.products-container {
+    display: flex !important;
+}
+
+.product-filters {
+    grid-area: productfilters;
+}
+
+.products-list {
+    grid-area: productslist;
+}

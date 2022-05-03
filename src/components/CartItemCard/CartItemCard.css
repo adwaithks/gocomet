@@ -1,0 +1,73 @@
+.cartitem-card {
+    border-radius: 4px;
+    padding: 10px;
+    height: 200px;
+    border: rgb(108, 108, 108) solid 1px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cartitem-card-info-container {
+    width: 100%;
+}
+
+.cartitem-card-close-icon {
+    font-size: 1.5em;
+}
+
+.cartitem-card-close-icon:hover {
+    opacity: 0.7;
+}
+
+.cartitem-card-img-container {
+    margin-right: 20px;
+}
+
+.cartitem-card-img-container > img {
+    height: 100%;
+    border-radius: 4px;
+}
+
+
+.cartitem-card-name-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartitem-card-desc-container > h2 {
+    font-weight: 400;
+    font-size: 1.1em;
+}
+
+.cartitem-card-desc-container > h3 {
+    font-weight: 400;
+    color: gray;
+    font-size: 1em;
+}
+
+.cartitem-card-price-container {
+    width: fit-content;
+}
+
+.cartitem-card-original-price {
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.cartitem-card-discount-price {
+    font-weight: 800;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.cartitem-card-offer {
+    font-weight: 400;
+    font-size: 1em;
+}
+
+.cartitem-card-prices-container {
+    display: flex;
+}

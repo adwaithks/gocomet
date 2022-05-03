@@ -1,0 +1,23 @@
+.sort-by {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: white;
+}
+
+.sort-by-select-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+.sort-by-select-container > h3 {
+    margin-right: 10px;
+}
+
+.sort-by-select {
+    padding: 10px;
+    float: right;
+    position: relative;
+}

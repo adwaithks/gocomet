@@ -1,0 +1,15 @@
+.details-page {
+    display: flex;
+}
+
+.image-showcase-comp {
+    width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+    .details-page {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

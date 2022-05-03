@@ -1,0 +1,21 @@
+.filters-discount{ 
+    width: fit-content;
+}
+
+.filters-discount > h1 {
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.filters-discount-list {
+    padding: 5px;
+    list-style: none;
+}
+
+.filters-discount-ind {
+    padding: 3px;
+}
+
+.filters-discount-ind > label {
+    margin-left: 5px;
+}
